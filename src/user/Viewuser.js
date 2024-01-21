@@ -25,7 +25,7 @@ const Viewuser = () => {
                     <h2 className={"text-center m-4 "}>Student Details</h2>
                     <div className={"card"}>
                         <div className={"card-header"}>
-                            Details of user id :
+                            Details of Student id :
                             <ul className={"list-group list-group-flush"}>
                                 <li className={"list-group-item"}>
                                     <b className={"font-bold underline"}>Name:        </b>
