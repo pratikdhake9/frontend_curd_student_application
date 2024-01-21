@@ -22,9 +22,12 @@ export default function Navbar() {
                     >
                         <MenuIcon />
                     </IconButton>
-                    <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                        Full Stack Application
+
+                    <Typography variant="h6" component="div" sx={{ flexGrow: 1 }} className={"content-center text-center"}>
+                        <Link to={"/"} className={"text-white "}>
+                        Full Stack Application</Link>
                     </Typography>
+
                     <Link className={"btn btn-outline-light"} to={"/adduser"}>Add User</Link>
                 </Toolbar>
             </AppBar>
