@@ -25,10 +25,10 @@ export default function Navbar() {
 
                     <Typography variant="h6" component="div" sx={{ flexGrow: 1 }} className={"content-center text-center"}>
                         <Link to={"/"} className={"text-white "}>
-                        Full Stack Application</Link>
+                        Full Stack Student Curd Application</Link>
                     </Typography>
 
-                    <Link className={"btn btn-outline-light"} to={"/adduser"}>Add User</Link>
+                    <Link className={"btn btn-outline-light"} to={"/adduser"}>Add Student</Link>
                 </Toolbar>
             </AppBar>
         </Box>
