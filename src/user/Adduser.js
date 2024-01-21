@@ -23,7 +23,7 @@ const Adduser = () => {
         <div className={"container"}>
             <div className={"row"}>
                 <div className={"col-md-6 offset-md-3 border rounded p-4 mt-2 shadow "}>
-                    <h2 className={"text-center m-4 "}> Register User</h2>
+                    <h2 className={"text-center m-4 "}> Register Student</h2>
                     <form onSubmit={(e)=>onsubmit(e)}>
                         <div className={"mb-3"}>
                             <label htmlFor={"Name"} className={"form-label"}>
