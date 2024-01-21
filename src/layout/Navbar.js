@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
+import {Link} from "react-router-dom";
 
 export default function Navbar() {
     return (
@@ -24,7 +25,7 @@ export default function Navbar() {
                     <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                         Full Stack Application
                     </Typography>
-                    <Button variant="outlined" className={"text-white font-bold"}>Add User</Button>
+                    <Link className={"btn btn-outline-light"} to={"/adduser"}>Add User</Link>
                 </Toolbar>
             </AppBar>
         </Box>

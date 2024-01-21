@@ -1,23 +1,25 @@
 
 import './App.css';
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
-import Appbar from "./component/Appbar";
-import {Stu} from "./component/Stu";
 import Navbar from "./layout/Navbar";
+import { Routes, Route} from "react-router-dom";
 import Home from "./pages/Home";
-
+import Adduser from "./user/Adduser";
+import Edituser from "./user/Edituser";
+import Viewuser from "./user/Viewuser";
 
 function App() {
   return (
-      <div>
-        <Navbar/>
-          <Home/>
-      </div>
-      /*
-    <div className={"h-56 grid grid-rows-0.1 gap-4 content-between ..."} >
-      <Appbar/>
-        <Stu/>
-    </div>*/
+      <dev>
+            <Navbar/>
+            <Routes>
+                <Route exact path="/" element={<Home/>}></Route>
+                <Route exact path="/adduser" element={<Adduser/>}></Route>
+                <Route exact path="/edituser" element={<Edituser/>}></Route>
+                <Route exact path="/viewuser" element={<Viewuser/>}></Route>
+            </Routes>
+
+      </dev>
   );
 }
 
